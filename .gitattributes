@@ -1,0 +1,7 @@
+# Normalize text files to LF in the repository and on checkout, so a Windows/WSL
+# editor cannot rewrite a whole file as a line-ending-only diff. The shell scripts
+# in particular must stay LF to run.
+* text=auto eol=lf
+
+# Generated speech clips: binary, never touched by line-ending normalization.
+*.mp3 binary
